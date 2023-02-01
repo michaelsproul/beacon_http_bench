@@ -1,0 +1,15 @@
+---
+concurrency: 1
+base: 'http://localhost:5052'
+# Default 1 iteration, set ITERATIONS environment variable to override.
+iterations: "{{ ITERATIONS }}"
+rampup: 0
+
+# Tags only apply to top-level items, so we tag our benchmarks by file.
+plan:
+  - include: ./subjective_json.yaml
+    tags: [easy, subjective, json]
+  - include: ./subjective_ssz.yaml
+    tags: [easy, subjective, ssz]
+  - include: ./mainnet.yaml
+    tags: [mainnet, hard, objective, ssz]

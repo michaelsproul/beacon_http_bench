@@ -1,0 +1,6 @@
+---
+- name: head_blinded_block_ssz
+  request:
+    url: /eth/v1/beacon/blinded_blocks/head
+    header: "Accept: application/octet-stream"
+  tags: [easy, subjective, ssz]
