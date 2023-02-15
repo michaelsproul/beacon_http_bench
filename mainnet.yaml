@@ -5,44 +5,44 @@
 # Slot 5660672
 - name: mainnet_state_by_slot_0_mod_8192
   request:
-    url: /eth/v1/debug/beacon/states/5660672
+    url: /eth/v2/debug/beacon/states/5660672
     header: "Accept: application/octet-stream"
 
 # Slot 5652481
 - name: mainnet_state_by_slot_1_mod_8192
   request:
-    url: /eth/v1/debug/beacon/states/5652481
+    url: /eth/v2/debug/beacon/states/5652481
     header: "Accept: application/octet-stream"
 
 # Slot 5644288
 - name: mainnet_state_by_root_0_mod_8192
   request:
-    url: /eth/v1/debug/beacon/states/0x338befea4046a8e4b7a1096e8ea1d099102a8dc64e58bef4ce8f743ababdcc84
+    url: /eth/v2/debug/beacon/states/0x338befea4046a8e4b7a1096e8ea1d099102a8dc64e58bef4ce8f743ababdcc84
     header: "Accept: application/octet-stream"
 
 # Slot 5636097
 - name: mainnet_state_by_root_1_mod_8192
   request:
-    url: /eth/v1/debug/beacon/states/0xaf4eb904963d07c580469987cf8e9f14b330bb65fb4f318b2581886f9c51d6bc
+    url: /eth/v2/debug/beacon/states/0xaf4eb904963d07c580469987cf8e9f14b330bb65fb4f318b2581886f9c51d6bc
     header: "Accept: application/octet-stream"
 
 # Slot 5636064
 # Lies on an epoch boundary but very far from a default restore point (8192 slots).
 - name: mainnet_state_by_slot_8160_mod_8192
   request:
-    url: /eth/v1/debug/beacon/states/5636064
+    url: /eth/v2/debug/beacon/states/5636064
     header: "Accept: application/octet-stream"
 
 # Slot 5627873
 # One slot after an epoch boundary but far from a default restore point (8192 slots).
 - name: mainnet_state_by_slot_8161_mod_8192
   request:
-    url: /eth/v1/debug/beacon/states/5627873
+    url: /eth/v2/debug/beacon/states/5627873
     header: "Accept: application/octet-stream"
 
 # Slot 5619711.
 # 31 slots after an epoch boundary, worst-case for Lighthouse.
 - name: mainnet_state_by_slot_8191_mod_8192
   request:
-    url: /eth/v1/debug/beacon/states/5619711
+    url: /eth/v2/debug/beacon/states/5619711
     header: "Accept: application/octet-stream"
